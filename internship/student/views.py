@@ -3,8 +3,7 @@ from .models import studentRegister_model
 # Create your views here.
 
 
-def background_view(request):
-    return render(request,'background_page.html')
+
 
 def studentRegister_view(request):
     if request.POST:
@@ -15,5 +14,3 @@ def studentRegister_view(request):
         register_obj.save()
     return render(request,'student_register.html')
 
-def companyRegister_view(request):
-    return render(request,'company_register.html')
